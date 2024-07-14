@@ -1,5 +1,6 @@
 const mongoose = require("mongoose");
 const colors = require("colors");
+const dotenv = require("dotenv").config();
 
 const connectDB = async () => {
   try {
@@ -12,5 +13,6 @@ const connectDB = async () => {
     console.log(`Mongodb Database Error ${error}`.bgRed.white);
   }
 };
+
 
 module.exports = connectDB;
